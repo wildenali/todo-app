@@ -8,10 +8,12 @@ function App() {
     'Take the rubbish out'
   ])
 
+  const [input, setInput] = useState('')
+
   return (
     <div className="App">
       <h1>To Do App</h1>
-      <input />
+      <input value={input}/>
       <button>Add Todo</button>
 
       <ul>
