@@ -33,5 +33,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 # Clean The App
 Clean the code unuse
 
+# Create Project on Firebase
+1. Go to console
+2. Create web app project named with todo-app-wilden
+
 # Install Firebase
-`$ npm install -g firebase-tools`
+1. `$ npm install -g firebase-tools`
+2. `$ firebase login`
+
