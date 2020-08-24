@@ -4,7 +4,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      To Do App
+      <h1>To Do App</h1>
+      <input />
+      <button>Add Todo</button>
     </div>
   );
 }
