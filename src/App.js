@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [todos, setTodos] = useState([
+    'Take dogs for a walk',
+    'Take the rubbish out'
+  ])
+
   return (
     <div className="App">
       <h1>To Do App</h1>
@@ -9,8 +15,9 @@ function App() {
       <button>Add Todo</button>
 
       <ul>
-        <li>Take dogs for a walk</li>
-        <li>Take the rubbish out</li>
+        {todos.map(todo => (
+          <li>{todo}</li>
+        ))}
       </ul>
 
     </div>
