@@ -9,11 +9,13 @@ function App() {
   ])
 
   const [input, setInput] = useState('')
+  console.log(input)
+  
 
   return (
     <div className="App">
       <h1>To Do App</h1>
-      <input value={input}/>
+      <input value={input} onChange={event => setInput(event.target.value)}/>
       <button>Add Todo</button>
 
       <ul>
