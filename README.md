@@ -41,3 +41,6 @@ Clean the code unuse
 1. `$ npm install -g firebase-tools`
 2. `$ firebase login`
 
+# Install Material UI
+1. Install Material UI Core<br/>
+`$ npm install @material-ui/code`
