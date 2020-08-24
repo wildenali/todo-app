@@ -14,11 +14,13 @@ function App() {
   const addTodo = (event) => {
     // this will fire off when we click the button
     event.preventDefault()  // will stop the REFRESH, so no need refresh to add Todos when input text on input tag
-    
+
     console.log('Im Working!!!')
     setTodos([
       ...todos, input
     ])
+
+    setInput('')
   }
   
 
