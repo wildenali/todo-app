@@ -7,6 +7,12 @@ function App() {
       <h1>To Do App</h1>
       <input />
       <button>Add Todo</button>
+
+      <ul>
+        <li>Take dogs for a walk</li>
+        <li>Take the rubbish out</li>
+      </ul>
+
     </div>
   );
 }
