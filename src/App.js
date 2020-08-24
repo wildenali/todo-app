@@ -13,6 +13,8 @@ function App() {
 
   const addTodo = (event) => {
     // this will fire off when we click the button
+    event.preventDefault()  // will stop the REFRESH, so no need refresh to add Todos when input text on input tag
+    
     console.log('Im Working!!!')
     setTodos([
       ...todos, input
@@ -23,8 +25,10 @@ function App() {
   return (
     <div className="App">
       <h1>To Do App</h1>
-      <input value={input} onChange={event => setInput(event.target.value)}/>
-      <button onClick={addTodo}>Add Todo</button>
+      <form>
+        <input value={input} onChange={event => setInput(event.target.value)}/>
+        <button type="submit" onClick={addTodo}>Add Todo</button>
+      </form>
 
       <ul>
         {todos.map(todo => (
