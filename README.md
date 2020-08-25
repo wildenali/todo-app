@@ -66,3 +66,5 @@ Clean the code unuse
 7. Configure as a single-page app (rewrite all urls to /index.html)? (y/N) , jawab YES aja
 8. Overwrite index.html? jawab No, karena mau pake index.html yg di build
 9. `$ firebase deploy`
+
+10. Cara cepat `$ npm run build && firebase deploy`
