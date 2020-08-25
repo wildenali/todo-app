@@ -48,3 +48,5 @@ Clean the code unuse
 # Connecting to Firebase
 1. Install firebase
 `$ npm i firebase`
+2. Buat Cloud Firestore di console projek firebase
+3. Buat Collection (Koleksi) baru di cloud firestore
