@@ -4,7 +4,21 @@ import db from './firebase';
 import './Todo.css'
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever'
 
+import { makeStyles } from '@material-ui/core/styles';
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    position: 'absolute',
+    width: 400,
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #000',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3)
+  }
+}));
+
 function Todo(props) {
+
+  const classes = useStyles();
 
   const [open, setOpen] = useState(false);
 
@@ -16,15 +30,21 @@ function Todo(props) {
     setOpen(false)
   };
  
+  const updateTodo = () => {
+    // update the todo with the new input text
+    setOpen(false);
+  }
+
   return (
     <>
       <Modal
         open={open}
         onClose={e => setOpen(false)}
       >
-        <div>
+        <div className={classes.paper}>
           <h1>I am a Modal</h1>
-          <button onClick={e => setOpen(false)}></button>
+          <input />
+          <Button onClick={e => setOpen(false)}>Update Todo</Button>
         </div>
       </Modal>
       <List className="todo_list">
