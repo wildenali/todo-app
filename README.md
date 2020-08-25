@@ -1,3 +1,5 @@
+[To Do App Wilden](https://todo-app-wilden.web.app/)
+
 # Membuat aplikasi ToDo
 sumber referensi dari https://www.youtube.com/watch?v=VqgTr-nd7Cg
 
@@ -50,3 +52,14 @@ Clean the code unuse
 `$ npm i firebase`
 2. Buat Cloud Firestore di console projek firebase
 3. Buat Collection (Koleksi) baru di cloud firestore
+
+# Deploy to Firebase Hosting
+1. `$ firebase login`
+2. `$ npm run build`
+3. `$ firebase init`
+4. Are you ready to procees? Jawab Y
+5. Pilih Hosting: Configure and deploy Firebase Hosting sites
+6. What do you want to use as your public directory? (awalnya public ganti jadi build)
+7. Configure as a single-page app (rewrite all urls to /index.html)? (y/N) , jawab YES aja
+8. Overwrite index.html? jawab No, karena mau pake index.html yg di build
+9. `$ firebase deploy`
