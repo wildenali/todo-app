@@ -44,3 +44,7 @@ Clean the code unuse
 # Install Material UI
 1. Install Material UI Core<br/>
 `$ npm install @material-ui/core`
+
+# Connecting to Firebase
+1. Install firebase
+`$ npm i firebase`
