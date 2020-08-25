@@ -23,9 +23,10 @@ function App() {
     event.preventDefault()  // will stop the REFRESH, so no need refresh to add Todos when input text on input tag
 
     console.log('Im Working!!!')
-    setTodos([
-      ...todos, input
-    ])
+    
+    db.collection('todos').add({
+      todo: input
+    })
 
     setInput('')
   }
