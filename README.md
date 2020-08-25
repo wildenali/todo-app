@@ -53,6 +53,9 @@ Clean the code unuse
 2. Buat Cloud Firestore di console projek firebase
 3. Buat Collection (Koleksi) baru di cloud firestore
 
+# Install Material-UI Icons
+`$ npm i @material-ui/icons`
+
 # Deploy to Firebase Hosting
 1. `$ firebase login`
 2. `$ npm run build`
