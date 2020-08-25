@@ -1,5 +1,3 @@
-const { configure } = require("@testing-library/react");
-
 import firebase from 'firebase';
 
 const firebaseApp = firebase.initializeApp({
